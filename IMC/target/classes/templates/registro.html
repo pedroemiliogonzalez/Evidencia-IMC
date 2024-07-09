@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Registro</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #d4f5d4;
+    }
+    .registro-container {
+      width: 300px;
+      padding: 16px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    }
+    .registro-container h1 {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .error-message {
+      color: red;
+      margin-bottom: 12px;
+    }
+    input[type=text], input[type=password], input[type=number], select {
+      font-size: 16px;
+      width: 100%;
+    }
+    button {
+      background-color: #4CAF50; /* Green */
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+<div class="registro-container">
+  <h1><span style="color: red;">IM</span><span style="color: green;">C</span><span style="color: blue;">ALCULATOR</span></h1>
+  <form th:action="@{/imcalculator/registro}" method="post">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="text" name="apellido" placeholder="Apellido" required>
+    <input type="number" name="edad" placeholder="Edad (años)" min="15" required>
+    <input type="number" name="estatura" placeholder="Estatura (m)" min="1" max="2.5" step="0.01" required>
+    <select name="sexo" required>
+      <option value="">Selecciona tu sexo</option>
+      <option value="h">Hombre</option>
+      <option value="m">Mujer</option>
+    </select>
+    <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" required>
+    <input type="password" name="contrasena" placeholder="Contraseña" required>
+    <button type="submit">Registrarse</button>
+  </form>
+  <div th:if="${error}" class="error-message">
+    <p th:text="${error}"></p>
+  </div>
+</div>
+</body>
+</html>

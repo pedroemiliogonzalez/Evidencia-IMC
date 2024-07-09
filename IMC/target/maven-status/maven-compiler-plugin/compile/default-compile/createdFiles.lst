@@ -1,0 +1,12 @@
+com\example\demo\model\IMC.class
+com\example\demo\DemoApplication.class
+com\example\demo\model\Usuario.class
+com\example\demo\repository\IMCRepository.class
+com\example\demo\exceptions\UsuarioAlreadyExistsException.class
+com\example\demo\controller\IMCController.class
+com\example\demo\exceptions\UsuarioNullException.class
+com\example\demo\repository\UsuarioRepository.class
+com\example\demo\service\IMCService.class
+com\example\demo\controller\UsuarioController.class
+com\example\demo\exceptions\GlobalExceptionHandler.class
+com\example\demo\service\UsuarioService.class

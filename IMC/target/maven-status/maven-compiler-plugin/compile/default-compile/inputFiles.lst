@@ -1,0 +1,12 @@
+C:\demo\src\main\java\com\example\demo\controller\IMCController.java
+C:\demo\src\main\java\com\example\demo\controller\UsuarioController.java
+C:\demo\src\main\java\com\example\demo\DemoApplication.java
+C:\demo\src\main\java\com\example\demo\exceptions\GlobalExceptionHandler.java
+C:\demo\src\main\java\com\example\demo\exceptions\UsuarioAlreadyExistsException.java
+C:\demo\src\main\java\com\example\demo\exceptions\UsuarioNullException.java
+C:\demo\src\main\java\com\example\demo\model\IMC.java
+C:\demo\src\main\java\com\example\demo\model\Usuario.java
+C:\demo\src\main\java\com\example\demo\repository\IMCRepository.java
+C:\demo\src\main\java\com\example\demo\repository\UsuarioRepository.java
+C:\demo\src\main\java\com\example\demo\service\IMCService.java
+C:\demo\src\main\java\com\example\demo\service\UsuarioService.java
